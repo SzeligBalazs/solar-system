@@ -175,8 +175,7 @@ nav a:hover {
 }
 
 .planet .description .images {
-  width: 50%;
-  height: 25%;
+  width: 620px;
   display: flex;
   overflow-x: auto;
   overflow-y: hidden;
