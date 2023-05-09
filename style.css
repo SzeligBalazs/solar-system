@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  color: #000;
+  font-family: "Source Sans Pro", sans-serif;
+  overflow-x: hidden;
+}
+
+.planet {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  flex-basis: auto;
+}
+
+.bg {
+  width: 50%;
+  height: 100%;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: start;
+  background: #fff;
+  width: 50vw;
+  max-width: 100%;
+  min-width: 25%;
+  padding: 20px 0;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 1rem;
+  padding: 0;
+  line-height: 1.5;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 1rem;
+  padding: 0;
+  line-height: 1.5;
+}
+
+#mercury {
+  width: 100%;
+  height: 100%;
+  background: url("assets/mercury/mercury.png") no-repeat center center/contain;
+}
+
+#venus {
+  width: 100%;
+  height: 100%;
+  background: url("assets/venus/venus.png") no-repeat center center/contain;
+}
+
+#earth {
+  width: 100%;
+  height: 100%;
+  background: url("assets/earth/earth.png") no-repeat center center/contain;
+}
+
+#mars {
+  width: 100%;
+  height: 100%;
+  background: url("assets/mars/mars.png") no-repeat center center/contain;
+}
+
+#jupiter {
+  width: 100%;
+  height: 100%;
+  background: url("assets/jupiter/jupiter.png") no-repeat center center/contain;
+}
+
+#saturn {
+  width: 100%;
+  height: 100%;
+  background: url("assets/saturn/saturn.png") no-repeat center center/contain;
+}
+
+#uranus {
+  width: 100%;
+  height: 100%;
+  background: url("assets/uranus/uranus.png") no-repeat center center/contain;
+}
+
+#neptune {
+  width: 100%;
+  height: 100%;
+  background: url("assets/neptune/neptunus.png") no-repeat center center/contain;
+}
+
+.planet .description {
+  width: 50%;
+  min-width: 50%;
+  min-height: 100%;
+  height: 100%;
+  text-align: left;
+  background: #fff;
+  padding: 5%;
+}
+
+.planet .description h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+.planet .description p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.planet .description .line {
+  width: 100%;
+  height: 5px;
+  background: #000;
+  margin: 2rem 0;
+  border-radius: 15px;
+}
+
+.planet .description ul {
+  width: 100%;
+  height: auto;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+.planet .description li {
+  width: 100%;
+  height: auto;
+  list-style: none;
+  margin: 1rem 0;
+}
+
+.planet .description .images {
+  width: 50%;
+  height: 25%;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.planet .description .images .img {
+  width: 50%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding-right: 10px;
+}
+
+.planet .description .images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 750px) {
+  .planet {
+    width: 100%;
+    height: 100%;
+    display: inline;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    width: 100%;
+    max-width: 100%;
+    min-width: 25%;
+    padding: 20px 0;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .planet .description {
+    width: 100%;
+    height: auto;
+    text-align: left;
+    background: #fff;
+    padding: 5%;
+  }
+
+  .bg {
+    width: 100%;
+    height: 50%;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
